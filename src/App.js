@@ -4,6 +4,7 @@ import {Login} from './components/Login'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import {Home} from './components/Home'
 import {MyTransaction} from './components/MyTransaction'
+import {AddUser} from './components/AddUser'
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       </Route>
       <Route path="/my-transaction">
         <MyTransaction/>
+      </Route>
+      <Route path="/register">
+        <AddUser/>
       </Route>
     </Switch>
     </BrowserRouter>

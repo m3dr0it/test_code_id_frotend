@@ -35,12 +35,18 @@ const Home = () => {
         }
     },[refresh])
 
+    const onClickLogout = (e) => {
+      localStorage.setItem('username','')
+      localStorage.getItem('token','')
+      history.push('/login')
+    }
+
   return(
       <div>
           <div class="relative">
                 <div class="absolute top-0 right-0 my-0">
                 <button onClick={()=>history.push('/my-transaction')} class="bg-blue-500 px-4 mx-2 py-2 text-xs font-semibold tracking-wider text-white rounded hover:bg-blue-600">My Transactions</button>
-                <button class="bg-blue-500 px-4 mx-2 py-2 text-xs font-semibold tracking-wider text-white rounded hover:bg-blue-600">Logout</button>
+                <button onClick={onClickLogout} class="bg-blue-500 px-4 mx-2 py-2 text-xs font-semibold tracking-wider text-white rounded hover:bg-blue-600">Logout</button>
                 </div>
             </div>
         <div class="my-16 flex items-center justify-center flex-wrap">

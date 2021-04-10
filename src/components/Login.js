@@ -21,9 +21,14 @@ const Login = () => {
       try {
         let result = await axios.post(backend_url+'/login',{username,password})
         console.log(result.data)
-        localStorage.setItem('token',result.data)
-        localStorage.setItem('username',username)
-        history.push('/home')
+        if(!result.data){
+            alert("Username atau password salah")
+        }else{
+            localStorage.setItem('token',result.data)
+            localStorage.setItem('username',username)
+            history.push('/home')
+        }
+
       } catch (error) {
           console.log(error)
       }

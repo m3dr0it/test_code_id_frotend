@@ -8,7 +8,7 @@ const CardProduct = (props) => {
 
     return(
       <div class="max-w-xs mx-5 rounded overflow-hidden shadow-lg my-2">
-          <img src="https://picsum.photos/200/300" alt="Product"/>
+          <img src="https://picsum.photos/200/200" alt="Product"/>
           <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">{props.product.product_name}</div>
               <p class="text-grey-darker text-base">

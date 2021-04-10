@@ -5,6 +5,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import {Home} from './components/Home'
 import {MyTransaction} from './components/MyTransaction'
 import {AddUser} from './components/AddUser'
+import {AddProduct} from './components/AddProduct'
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       </Route>
       <Route path="/register">
         <AddUser/>
+      </Route>
+      <Route path="/add-product">
+        <AddProduct/>
       </Route>
     </Switch>
     </BrowserRouter>

@@ -52,7 +52,7 @@ const Home = () => {
         <div class="my-16 flex items-center justify-center flex-wrap">
         <div class="my-8">
             <h1 class="font-bold text-2xl text-center">Hi {username}</h1>
-            <div className="flex flex-row">
+            <div className="flex flex-wrap">
             {
                 product !== undefined ? 
                 product.map((x)=>{

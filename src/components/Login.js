@@ -65,7 +65,7 @@ const Login = () => {
                                 <span>
                                     Don't have an account?
                                 </span>
-                                <a href="#" class="font-light text-md text-indigo-600 underline font-semibold hover:text-indigo-800">Create One</a>
+                                <a href="" onClick={()=>history.push('/register')} class="font-light text-md text-indigo-600 underline font-semibold hover:text-indigo-800">Create One</a>
                             </div>
                         </div>
                     </div>
